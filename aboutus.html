@@ -26,13 +26,12 @@
           font-size: 3.5rem;
         }
       }
-
       .b-example-divider {
         height: 3rem;
-        background-color: #212529;
-        border: solid #212529(0, 0, 0, .15);
+        /* background-color: rgba(0, 0, 0, .1); */
+        border: solid rgba(0, 0, 0, .15);
         border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        /* box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15); */
       }
 
       .b-example-vr {
@@ -270,6 +269,41 @@
             height: 100%; 
             margin: 0; 
           }
+        
+          .main-content {
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            /* background-color: #343a40;  */
+            /* Darker background color */
+            width: 100%;
+            padding: 10px; /* Added padding for spacing */
+          }
+        
+          .centered-text {
+            text-align: center;
+            color: #f8f9fa; /* Slightly lighter text color */
+            padding: 25px; /* Increased padding */
+            font-family: Arial, sans-serif; /* Changed font family */
+          }
+        
+          /* .centered-image {
+            max-width: 90%; /* Reduced the max width to provide more margin */
+            /* height: auto;  */
+            /* margin-top: 30px; */
+             /* Increased margin */
+            /* border-radius: 8px;  */
+            /* Added border radius for softer edges */
+          /* }
+          */
+        </style>
+        
+        <!-- <style>
+          body, html {
+            height: 100%; 
+            margin: 0; 
+          }
       
           .main-content {
             display: flex; 
@@ -291,12 +325,17 @@
             height: auto; 
             margin-top: 20px; 
           }
-        </style>
+        </style> -->
+        <div class="bis_skin_checked">
+          <div class="wave" bis_skin_checked="1"></div>
+          <div class="wave" bis_skin_checked="1"></div>
+          <div class="wave" bis_skin_checked="1"></div>
+           </div>
       </body>
       
       
 </main>
-
+  
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 
