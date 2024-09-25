@@ -13,27 +13,27 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
-      .bd-placeholder-img {
+      /* .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
         -webkit-user-select: none;
         -moz-user-select: none;
         user-select: none;
-      } 
+      }  */
 
-      @media (min-width: 768px) {
+      /* @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 2.5rem;
         }
-      }
+      } */
 
-      .b-example-divider {
-        height: 3rem;
+      /* .b-example-divider {
+        height: 3rem; */
         /* background-color: rgba(0, 0, 0, .1); */
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
+        /* border: solid rgba(0, 0, 0, .15); */
+        /* border-width: 1px 0; */
         /* box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15); */
-      }
+      /* } */
 
       .b-example-vr {
         flex-shrink: 0;
@@ -251,33 +251,102 @@
   
     <div class="b-example-divider b-example-vr"></div>
 
+    <div class="container">
+      <h2 class="mb-4 text-center" style="position: relative; margin-top: 20px;">Our Games</h2>
+
     <style>
-        body {
-            /* padding: 20px; */
-            background-color: #212529; 
-            color: white; 
-            position: center;
-        }
+      .carousel-indicators img{
+          width: 70px;
+          display: block;
+          position: relative;
+      }
+      .carousel-indicators button{
+          width: max-content !important;
+      }
+      .carousel-indicators{
+          position: fixed;
+          bottom: unset;
+          left: 400px;
+      }
+      .carousel-inner{
+        position: center;
+      }
+      .container {
+        margin-left: 100px;
+      }
+      
+  </style>
+<div class="carousel slide" 
+id="carouselDemo"
+data-bs-wrap="true" 
+data-bs-ride="carousel">
 
-        .carousel-item img {
-            width: auto !important;
-            
-        }
+  <div class="carousel-inner">
 
-        .container {
-         
-            margin-left: 90px;
-            max-width: 1500px;
-           
-        }
-    </style>
+      <div class="carousel-item active">
+          <img src="image1.png" class="w-200">
+          <div class="carousel-caption">
+          </div>
+      </div>
+
+      <div class="carousel-item " 
+      data-bs-interval="2000">
+          <img src="image1.png" class="w-200">
+          <div class="carousel-caption"> 
+          </div>
+      </div>
+
+      <div class="carousel-item ">
+          <img src="image1.png" class="w-200">
+          <div class="carousel-caption">
+          </div>
+      </div>
+
+  </div>
+<!-- 
+  <button class="carousel-control-prev" 
+  type="button"
+  data-bs-target="#carouselDemo" 
+  data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+  </button> -->
+
+  <!-- <button class="carousel-control-next"
+  type="button"
+  data-bs-target="#carouselDemo"
+  data-bs-slide="next">
+  <span class="carousel-control-next-icon"></span>
+</button> -->
+
+  <div class="carousel-indicators">
+      <button type="button" class="active"
+          data-bs-target="#carouselDemo"
+          data-bs-slide-to="0">
+          <img src="image1.png" />
+      </button>
+
+      <button type="button" 
+      data-bs-target="#carouselDemo"
+      data-bs-slide-to="1">
+          <img src="image2.png" />
+      </button>
+
+      <button type="button"
+      data-bs-target="#carouselDemo"
+       data-bs-slide-to="2"> 
+          <img src="image3.png" />
+      </button>
+  </div>
+
+</div>
+</div>
+
 </head>
 <body>
-    <div class="container">
-        <h2 class="mb-4 text-center">Our Games</h2>
+ 
 
        
-        <div id="demoCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- <div id="demoCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="image1.png" class="d-block w-100" alt="Image 1">
@@ -297,8 +366,8 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-        </div>
-    </div>
+        </div> -->
+    
 
 </main>
 
