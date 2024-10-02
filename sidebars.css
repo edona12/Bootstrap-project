@@ -139,3 +139,31 @@ main {
 .scrollarea {
   overflow-y: auto;
 }
+
+.unique-btn {
+  background-color: #343a40eb; 
+  color: white; 
+  padding: 10px 20px; 
+  text-align: center;
+  text-decoration: none; 
+  border-radius: 25px; 
+  display: inline-block; 
+  font-weight: 600; 
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif; 
+  margin-top: 5px;
+  transition: background-color 0.35s ease, transform 0.35s ease; 
+}
+
+.unique-btn:hover {
+  background-color:rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;; 
+  color: #ddd; 
+  transform: scale(1.05); 
+}
+
+
+
+.sidebar ul li a {
+  background-color: transparent;
+  color: #000; 
+  text-decoration: none;
+}
