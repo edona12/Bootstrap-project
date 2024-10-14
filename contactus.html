@@ -27,6 +27,15 @@
         }
       }
 
+      .flex-shrink-0 {
+            height: 100vh; 
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+
       .b-example-divider {
         height: 3rem;
         /* background-color: rgba(0, 0, 0, .1); */
@@ -143,125 +152,159 @@
   
     <div class="d-flex flex-column flex-shrink-0 bg-dark" style="width: 4.5rem;">
       <a href="/" class="d-block p-3 link-white text-decoration-none" title="Icon-only" data-bs-toggle="tooltip" data-bs-placement="right">
-        <svg class="bi pe-none" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-        <span class="visually-hidden">Icon-only</span>
+          <svg class="bi pe-none" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+          <span class="visually-hidden">Icon-only</span>
       </a>
       <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
-        <li class="nav-item">
-          <a href="#" class="nav-link active py-3 border-bottom rounded-0" aria-current="page" title="Home" data-bs-toggle="tooltip" data-bs-placement="right">
-            <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Home"><use xlink:href="#home"/></svg>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="nav-link py-3 border-bottom rounded-0" title="Dashboard" data-bs-toggle="tooltip" data-bs-placement="right">
-            <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Dashboard"><use xlink:href="#speedometer2"/></svg>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="nav-link py-3 border-bottom rounded-0" title="Orders" data-bs-toggle="tooltip" data-bs-placement="right">
-            <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Orders"><use xlink:href="#table"/></svg>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="nav-link py-3 border-bottom rounded-0" title="Products" data-bs-toggle="tooltip" data-bs-placement="right">
-            <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Products"><use xlink:href="#grid"/></svg>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="nav-link py-3 border-bottom rounded-0" title="Customers" data-bs-toggle="tooltip" data-bs-placement="right">
-            <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Customers"><use xlink:href="#people-circle"/></svg>
-          </a>
-        </li>
+          <li class="nav-item">
+              <a href="#" class="nav-link active py-3 border-bottom rounded-0" id="home-link" aria-current="page" title="Home" data-bs-toggle="tooltip" data-bs-placement="right">
+                  <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Home"><use xlink:href="#home"/></svg>
+              </a>
+          </li>
+          <li>
+              <a href="#" class="nav-link py-3 border-bottom rounded-0" id="dashboard-link" title="dashboard" data-bs-toggle="tooltip" data-bs-placement="right">
+                  <svg class="bi pe-none" width="24" height="24" role="img" aria-label="dashboard"><use xlink:href="#speedometer2"/></svg>
+              </a>
+          </li>
+          <li>
+              <a href="#" class="nav-link py-3 border-bottom rounded-0" id="orders-link" title="Orders" data-bs-toggle="tooltip" data-bs-placement="right">
+                  <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Orders"><use xlink:href="#table"/></svg>
+              </a>
+          </li>
+          <li>
+              <a href="#" class="nav-link py-3 border-bottom rounded-0" id="products-link" title="Products" data-bs-toggle="tooltip" data-bs-placement="right">
+                  <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Products"><use xlink:href="#grid"/></svg>
+              </a>
+          </li>
+          <li>
+              <a href="#" class="nav-link py-3 border-bottom rounded-0" id="customers-link" title="Customers" data-bs-toggle="tooltip" data-bs-placement="right">
+                  <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Customers"><use xlink:href="#people-circle"/></svg>
+              </a>
+          </li>
       </ul>
-      <div class="dropdown border-top">
-        <a href="#" class="d-flex align-items-center justify-content-center p-3 link-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-          <img src="spongebob.jpg" alt="mdo" width="24" height="24" class="rounded-circle">
-        </a>
-        <ul class="dropdown-menu text-small shadow">
-          <li><a class="dropdown-item" href="#">New project...</a></li>
-          <li><a class="dropdown-item" href="#">Settings</a></li>
-          <li><a class="dropdown-item" href="#">Profile</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Sign out</a></li>
-        </ul>
-      </div>
-    </div>
+      <!-- <div class="dropdown border-top">
+          <a href="#" class="d-flex align-items-center justify-content-center p-3 link-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="spongebob.jpg" alt="mdo" width="24" height="24" class="rounded-circle">
+          </a>
+          <ul class="dropdown-menu text-small shadow">
+              <li><a class="dropdown-item" href="#">New project...</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Sign out</a></li>
+          </ul>
+      </div> -->
+  </div>
   
     <div class="b-example-divider b-example-vr"></div>
   
-    <div class="flex-shrink-0 p-3 bg-dark" style="width: 280px;">
-      <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
-        <svg class="bi pe-none me-2" width="30" height="24" style="fill: white;">
-            <use xlink:href="#bootstrap"/>
-        </svg>
-        <span class="fs-5 fw-semibold text-white">AnymaPlay</span>
-    </a>
-
-      <ul class="list-unstyled ps-0">
-    <li class="mb-1">
-  <style>
-    .btn-toggle::before {
-      content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
-    }
-  </style>
-  
-  <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-white" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
-    About us
-  </button>
-  <div class="collapse" id="home-collapse">
-    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-      <li><a href="aboutus.html" class="link-dark d-inline-flex text-decoration-none rounded text-white">Overview</a></li>
-      <li><a href="aboutus.html" class="link-dark d-inline-flex text-decoration-none rounded text-white">Updates</a></li>
-      <li><a href="aboutus.html" class="link-dark d-inline-flex text-decoration-none rounded text-white">Reports</a></li>
-    </ul>
-  </div>
-</li>
-
-        <li class="mb-1">
-          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-white" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-            Contact us
-          </button>
-          <div class="collapse" id="dashboard-collapse">
-            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-              <li><a href="contactus.html" class="link-dark d-inline-flex text-decoration-none rounded text-white">Overview</a></li>
-              <li><a href="contactus.html" class="link-dark d-inline-flex text-decoration-none rounded text-white">Weekly</a></li>
-              <li><a href="contactus.html" class="link-dark d-inline-flex text-decoration-none rounded text-white">Monthly</a></li>
-              <li><a href="contactus.html" class="link-dark d-inline-flex text-decoration-none rounded text-white">Annually</a></li>
+    <div id="home-content" class="content-section" style="display: none;">
+      <div class="d-flex flex-column" style="min-height: 100vh;">
+        <div class="flex-shrink-0 p-3 bg-dark" style="width: 280px;">
+            <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+                <svg class="bi pe-none me-2" width="30" height="24" style="fill: white;">
+                    <use xlink:href="#bootstrap"/>
+                </svg>
+                <span class="fs-5 fw-semibold text-white">AnymaPlay</span>
+            </a>
+            <ul class="list-unstyled ps-0">
+                <li class="mb-1">
+                    <style>
+                        .btn-toggle::before {
+                            content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+                        }
+                    </style>
+                    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-white" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                        About us
+                    </button>
+                    <div class="collapse" id="home-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="aboutus.html" class="link-dark d-inline-flex text-decoration-none rounded text-white">Overview</a></li>
+                            <li><a href="aboutus.html" class="link-dark d-inline-flex text-decoration-none rounded text-white">Updates</a></li>
+                            <li><a href="aboutus.html" class="link-dark d-inline-flex text-decoration-none rounded text-white">Reports</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-white" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                        Contact us
+                    </button>
+                    <div class="collapse" id="dashboard-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="contactus.html" class="link-dark d-inline-flex text-decoration-none rounded text-white">Overview</a></li>
+                            <li><a href="contactus.html" class="link-dark d-inline-flex text-decoration-none rounded text-white">Weekly</a></li>
+                            <li><a href="contactus.html" class="link-dark d-inline-flex text-decoration-none rounded text-white">Monthly</a></li>
+                            <li><a href="contactus.html" class="link-dark d-inline-flex text-decoration-none rounded text-white">Annually</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-white" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                        Demo
+                    </button>
+                    <div class="collapse" id="orders-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="demo.html" class="link-dark d-inline-flex text-decoration-none rounded text-white">New</a></li>
+                            <li><a href="demo.html" class="link-dark d-inline-flex text-decoration-none rounded text-white">Processed</a></li>
+                            <li><a href="demo.html" class="link-dark d-inline-flex text-decoration-none rounded text-white">Shipped</a></li>
+                            <li><a href="demo.html" class="link-dark d-inline-flex text-decoration-none rounded text-white">Returned</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="border-top my-3"></li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-white" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                        Dashboard
+                    </button>
+                    <div class="collapse" id="account-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="dashboard.html" class="link-dark d-inline-flex text-decoration-none rounded text-white">Current Games Online</a></li>
+                            <li><a href="dashboard.html" class="link-dark d-inline-flex text-decoration-none rounded text-white">Transactions Per Minute</a></li>
+                            <li><a href="dashboard.html" class="link-dark d-inline-flex text-decoration-none rounded text-white">Active Player Sessions</a></li>
+                            <li><a href="dashboard.html" class="link-dark d-inline-flex text-decoration-none rounded text-white">Daily Game Revenue</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <a href="https://platform.dev.anymaplay.com/api/documentation" target="_blank" class="unique-btn">Api Documentation</a>
             </ul>
           </div>
-        </li>
-        <li class="mb-1">
-          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-white" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
-            Demo
-          </button>
-          <div class="collapse" id="orders-collapse">
-            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-              <li><a href="demo.html" class="link-dark d-inline-flex text-decoration-none rounded text-white">New</a></li>
-              <li><a href="demo.html" class="link-dark d-inline-flex text-decoration-none rounded text-white">Processed</a></li>
-              <li><a href="demo.html" class="link-dark d-inline-flex text-decoration-none rounded text-white">Shipped</a></li>
-              <li><a href="demo.html" class="link-dark d-inline-flex text-decoration-none rounded text-white">Returned</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="border-top my-3"></li>
-        <li class="mb-1">
-          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-white" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
-            Dashboard
-          </button>
-          <div class="collapse" id="account-collapse">
-            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-              <li><a href="dashboard.html" class="link-dark d-inline-flex text-decoration-none rounded text-white">Current Games Online</a></li>
-              <li><a href="dashboard.html" class="link-dark d-inline-flex text-decoration-none rounded text-white">Transactions Per Minute</a></li>
-              <li><a href="dashboard.html" class="link-dark d-inline-flex text-decoration-none rounded text-white">Active Player Sessions</a></li>
-              <li><a href="dashboard.html" class="link-dark d-inline-flex text-decoration-none rounded text-white">Daily Game Revenue</a></li>
-            </ul>
-          </div>
-        </li>
-
-
-        <a href="https://platform.dev.anymaplay.com/api/documentation" target="_blank" class="unique-btn">Api Documentation</a>
-        
-      </ul>
+        </div>
+        <script>
+          document.addEventListener('DOMContentLoaded', function () {
+              const sidebarLinks = document.querySelectorAll('.nav-link');
+              const contentSections = document.querySelectorAll('.content-section');
+      
+              sidebarLinks.forEach(link => {
+                  link.addEventListener('click', function (e) {
+                      e.preventDefault();
+      
+                      contentSections.forEach(section => {
+                          section.style.display = 'none';
+                      });
+      
+                      sidebarLinks.forEach(link => {
+                          link.classList.remove('active');
+                      });
+      
+                      const targetId = link.id.replace('-link', '-content');
+                      document.getElementById(targetId).style.display = 'block';
+                      link.classList.add('active');
+                  });
+              });
+          });
+      </script>
+      
+        <script src="sidebars.js"></script>
+      </body>
+      </html>
+      <script>
+      const sidebarToggle = document.getElementById('sidebarToggle');
+      const sidebar = document.getElementById('sidebar');
+      
+      sidebarToggle.addEventListener('click', function() {
+      sidebar.classList.toggle('d-none');
+      });
+      </script>
     </div>
   
     <div class="b-example-divider b-example-vr"></div>
