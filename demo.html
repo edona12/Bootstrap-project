@@ -128,8 +128,8 @@
   </symbol>
 </svg>
 
-<main class="d-flex flex-nowrap">
-  <main class="d-flex flex-nowrap">
+<main class="d-flex flex-nowrap w-100">
+  <main class="d-flex flex-nowrap w-100" >
     <div class="b-example-divider b-example-vr"></div>
   
     <div class="d-flex flex-column flex-shrink-0 bg-dark" style="width: 4.5rem;">
@@ -269,38 +269,44 @@
         </div>
     </div>
   
-    <div class="b-example-divider b-example-vr"></div>
 
     <div class="container">
       <!-- <h2 class="mb-4 text-center" style="position: relative; margin-top: 20px;">Our Games</h2> -->
 
-    <style>
-      .carousel-indicators img{
-          width: 70px;
-          display: block;
+      <style>
+        .carousel-indicators img {
+            width: 70px;
+            display: block;
+            position: relative;
+        }
+        .carousel-indicators button {
+            width: max-content !important;
+        }
+        .carousel-indicators {
+            position: relative;
+            bottom: unset;
+        }
+        .carousel-inner {
+            position: relative;
+            width: 100%;
+        }
+        .carousel-item img {
+            width: 100%;
+            height: auto;
+            object-fit: cover; 
+        }
+        .container {
           position: relative;
-      }
-      .carousel-indicators button{
-          width: max-content !important;
-      }
-      .carousel-indicators{
-          position: fixed;
-          bottom: unset;
-          left: 200px;
-      }
-      .carousel-inner{
-        position: center;
-        width: fit-content;
-      }
-      .container {
-        margin-left: 250px;
-      }
-      .custom-font {
-        font-family: 'Montserrat', sans-serif !important;
-        font-weight: 700;
-      }
-
-  </style>
+          display: flex;
+          justify-content: center;
+          right: 0;
+          left: 0;
+        }
+        .custom-font {
+            font-family: 'Montserrat', sans-serif !important;
+            font-weight: 700;
+        }
+      </style>
 <div class="carousel slide" 
 id="carouselDemo"
 data-bs-wrap="true" 
@@ -360,6 +366,8 @@ data-bs-ride="carousel">
 
 </div>
 </div>
+<div class="b-example-divider b-example-vr"></div>
+
 
       <div class="bis_skin_checked">
         <div class="wave" bis_skin_checked="1"></div>
